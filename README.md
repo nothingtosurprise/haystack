@@ -7,7 +7,7 @@
 | haystack/\_\_init\_\_.py                                                            |       12 |        0 |    100% |           |
 | haystack/components/\_\_init\_\_.py                                                 |        0 |        0 |    100% |           |
 | haystack/components/agents/\_\_init\_\_.py                                          |        5 |        0 |    100% |           |
-| haystack/components/agents/agent.py                                                 |      380 |       12 |     97% |477, 651, 704-705, 707, 853, 927, 1187-1188, 1194, 1229-1231 |
+| haystack/components/agents/agent.py                                                 |      380 |       12 |     97% |462, 636, 689-690, 692, 838, 912, 1172-1173, 1179, 1214-1216 |
 | haystack/components/agents/state/\_\_init\_\_.py                                    |        5 |        0 |    100% |           |
 | haystack/components/agents/state/state.py                                           |       73 |        2 |     97% |    75, 79 |
 | haystack/components/agents/state/state\_utils.py                                    |       18 |        0 |    100% |           |
@@ -19,7 +19,7 @@
 | haystack/components/builders/chat\_prompt\_builder.py                               |      110 |        2 |     98% |  176, 263 |
 | haystack/components/builders/prompt\_builder.py                                     |       50 |        0 |    100% |           |
 | haystack/components/caching/\_\_init\_\_.py                                         |        5 |        0 |    100% |           |
-| haystack/components/caching/cache\_checker.py                                       |       24 |        0 |    100% |           |
+| haystack/components/caching/cache\_checker.py                                       |       37 |        0 |    100% |           |
 | haystack/components/classifiers/\_\_init\_\_.py                                     |        5 |        0 |    100% |           |
 | haystack/components/classifiers/document\_language\_classifier.py                   |       35 |        0 |    100% |           |
 | haystack/components/classifiers/zero\_shot\_document\_classifier.py                 |       58 |        5 |     91% |140-142, 217, 220 |
@@ -57,7 +57,7 @@
 | haystack/components/embedders/backends/\_\_init\_\_.py                              |        0 |        0 |    100% |           |
 | haystack/components/embedders/backends/sentence\_transformers\_backend.py           |       25 |        0 |    100% |           |
 | haystack/components/embedders/backends/sentence\_transformers\_sparse\_backend.py   |       31 |        0 |    100% |           |
-| haystack/components/embedders/hugging\_face\_api\_document\_embedder.py             |      122 |        4 |     97% |174-175, 344, 372 |
+| haystack/components/embedders/hugging\_face\_api\_document\_embedder.py             |      122 |        4 |     97% |174-175, 336, 364 |
 | haystack/components/embedders/hugging\_face\_api\_text\_embedder.py                 |       83 |        4 |     95% |137-138, 252, 254 |
 | haystack/components/embedders/image/\_\_init\_\_.py                                 |        5 |        0 |    100% |           |
 | haystack/components/embedders/image/sentence\_transformers\_doc\_image\_embedder.py |       78 |        1 |     99% |       237 |
@@ -83,7 +83,7 @@
 | haystack/components/extractors/image/\_\_init\_\_.py                                |        5 |        0 |    100% |           |
 | haystack/components/extractors/image/llm\_document\_content\_extractor.py           |      105 |        0 |    100% |           |
 | haystack/components/extractors/llm\_metadata\_extractor.py                          |      153 |       31 |     80% |287-298, 305-316, 331-343, 380, 422-426, 437 |
-| haystack/components/extractors/named\_entity\_extractor.py                          |      182 |       59 |     68% |24, 39, 158-161, 170-177, 196, 202, 261, 274, 377-389, 392-397, 412, 440-448, 452-464, 467-474, 484, 488, 501-508 |
+| haystack/components/extractors/named\_entity\_extractor.py                          |      183 |       60 |     67% |24-25, 40, 159-162, 171-178, 197, 203, 262, 275, 378-390, 393-398, 413, 441-449, 453-465, 468-475, 485, 489, 496-503 |
 | haystack/components/extractors/regex\_text\_extractor.py                            |       49 |        0 |    100% |           |
 | haystack/components/fetchers/\_\_init\_\_.py                                        |        5 |        0 |    100% |           |
 | haystack/components/fetchers/link\_content.py                                       |      188 |       26 |     86% |160-165, 222-224, 246, 255-262, 292-296, 385-392, 425, 458 |
@@ -96,7 +96,7 @@
 | haystack/components/generators/chat/hugging\_face\_api.py                           |      229 |        7 |     97% |189, 420-421, 487, 579, 632, 703 |
 | haystack/components/generators/chat/hugging\_face\_local.py                         |      208 |       27 |     87% |70-72, 75, 83-85, 235, 278-280, 340, 370, 426, 455-460, 487, 538-541, 576-582, 598, 654-655 |
 | haystack/components/generators/chat/llm.py                                          |       30 |        2 |     93% |  117, 185 |
-| haystack/components/generators/chat/openai.py                                       |      196 |        4 |     98% |421, 471, 609, 709 |
+| haystack/components/generators/chat/openai.py                                       |      212 |        4 |     98% |421, 471, 642, 742 |
 | haystack/components/generators/chat/openai\_responses.py                            |      316 |       39 |     88% |237, 268, 356, 434, 449, 486, 493-500, 508, 549-558, 574-575, 580, 593-609, 618, 748, 790-791, 804, 847, 869, 888 |
 | haystack/components/generators/chat/types/\_\_init\_\_.py                           |        2 |        0 |    100% |           |
 | haystack/components/generators/chat/types/protocol.py                               |        4 |        0 |    100% |           |
@@ -265,7 +265,7 @@
 | haystack/utils/type\_serialization.py                                               |      111 |       12 |     89% |62, 64, 174-175, 186-189, 195, 211-214 |
 | haystack/utils/url\_validation.py                                                   |        4 |        0 |    100% |           |
 | haystack/version.py                                                                 |        5 |        2 |     60% |      9-10 |
-| **TOTAL**                                                                           | **17225** | **1229** | **93%** |           |
+| **TOTAL**                                                                           | **17255** | **1230** | **93%** |           |
 
 
 ## Setup coverage badge
