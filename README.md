@@ -40,7 +40,7 @@
 | haystack/components/converters/pypdf.py                                   |      103 |        6 |     94% |192, 209-211, 267-271 |
 | haystack/components/converters/txt.py                                     |       34 |        3 |     91% |     88-92 |
 | haystack/components/converters/utils.py                                   |       37 |        0 |    100% |           |
-| haystack/components/converters/xlsx.py                                    |      113 |        3 |     97% |83, 183, 185 |
+| haystack/components/converters/xlsx.py                                    |      116 |        3 |     97% |83, 183, 185 |
 | haystack/components/embedders/\_\_init\_\_.py                             |        5 |        0 |    100% |           |
 | haystack/components/embedders/azure\_document\_embedder.py                |       69 |        2 |     97% |  121, 124 |
 | haystack/components/embedders/azure\_text\_embedder.py                    |       63 |        2 |     97% |  107, 110 |
@@ -63,7 +63,7 @@
 | haystack/components/evaluators/sas\_evaluator.py                          |       57 |       25 |     56% |111-125, 153-188 |
 | haystack/components/extractors/\_\_init\_\_.py                            |        5 |        0 |    100% |           |
 | haystack/components/extractors/image/\_\_init\_\_.py                      |        5 |        0 |    100% |           |
-| haystack/components/extractors/image/llm\_document\_content\_extractor.py |      156 |        1 |     99% |       323 |
+| haystack/components/extractors/image/llm\_document\_content\_extractor.py |      152 |        1 |     99% |       329 |
 | haystack/components/extractors/llm\_metadata\_extractor.py                |      168 |       12 |     93% |311-319, 333-341, 414, 466 |
 | haystack/components/extractors/regex\_text\_extractor.py                  |       49 |        0 |    100% |           |
 | haystack/components/fetchers/\_\_init\_\_.py                              |        5 |        0 |    100% |           |
@@ -71,12 +71,12 @@
 | haystack/components/generators/\_\_init\_\_.py                            |        5 |        0 |    100% |           |
 | haystack/components/generators/chat/\_\_init\_\_.py                       |        5 |        0 |    100% |           |
 | haystack/components/generators/chat/azure.py                              |       92 |        3 |     97% |213, 371, 374 |
-| haystack/components/generators/chat/azure\_responses.py                   |       46 |        2 |     96% |  224, 271 |
+| haystack/components/generators/chat/azure\_responses.py                   |       46 |        1 |     98% |       274 |
 | haystack/components/generators/chat/fallback.py                           |      102 |        3 |     97% |   258-263 |
 | haystack/components/generators/chat/llm.py                                |       40 |        1 |     98% |       124 |
 | haystack/components/generators/chat/mock.py                               |      154 |        0 |    100% |           |
 | haystack/components/generators/chat/openai.py                             |      233 |        4 |     98% |468, 519, 691, 791 |
-| haystack/components/generators/chat/openai\_responses.py                  |      376 |       34 |     91% |307, 338, 428, 509, 525, 562, 587, 640-649, 665-666, 671, 681, 691-707, 717, 774, 869, 911-912, 935, 987, 1012, 1031 |
+| haystack/components/generators/chat/openai\_responses.py                  |      376 |       33 |     91% |307, 431, 512, 528, 565, 590, 643-652, 668-669, 674, 684, 694-710, 720, 777, 872, 914-915, 938, 990, 1015, 1034 |
 | haystack/components/generators/chat/types/\_\_init\_\_.py                 |        2 |        0 |    100% |           |
 | haystack/components/generators/chat/types/protocol.py                     |        4 |        0 |    100% |           |
 | haystack/components/generators/openai\_image\_generator.py                |       80 |        0 |    100% |           |
@@ -84,7 +84,7 @@
 | haystack/components/joiners/\_\_init\_\_.py                               |        5 |        0 |    100% |           |
 | haystack/components/joiners/answer\_joiner.py                             |       57 |        1 |     98% |       164 |
 | haystack/components/joiners/branch.py                                     |       20 |        3 |     85% |105, 116-117 |
-| haystack/components/joiners/document\_joiner.py                           |      102 |        0 |    100% |           |
+| haystack/components/joiners/document\_joiner.py                           |      104 |        0 |    100% |           |
 | haystack/components/joiners/list\_joiner.py                               |       23 |        0 |    100% |           |
 | haystack/components/joiners/string\_joiner.py                             |        8 |        0 |    100% |           |
 | haystack/components/preprocessors/\_\_init\_\_.py                         |        5 |        0 |    100% |           |
@@ -92,7 +92,7 @@
 | haystack/components/preprocessors/csv\_document\_splitter.py              |      108 |        4 |     96% |128, 131, 142-146 |
 | haystack/components/preprocessors/document\_cleaner.py                    |      125 |        1 |     99% |       107 |
 | haystack/components/preprocessors/document\_preprocessor.py               |       47 |        2 |     96% |  168, 204 |
-| haystack/components/preprocessors/document\_splitter.py                   |      273 |        2 |     99% |  210, 236 |
+| haystack/components/preprocessors/document\_splitter.py                   |      279 |        2 |     99% |  210, 236 |
 | haystack/components/preprocessors/embedding\_based\_document\_splitter.py |      229 |       12 |     95% |297-298, 429, 481-493, 511, 528, 598-599 |
 | haystack/components/preprocessors/hierarchical\_document\_splitter.py     |       60 |        0 |    100% |           |
 | haystack/components/preprocessors/markdown\_header\_splitter.py           |      166 |        6 |     96% |251-252, 266-267, 318, 377 |
@@ -168,7 +168,7 @@
 | haystack/document\_stores/errors/\_\_init\_\_.py                          |        2 |        0 |    100% |           |
 | haystack/document\_stores/errors/errors.py                                |        6 |        0 |    100% |           |
 | haystack/document\_stores/in\_memory/\_\_init\_\_.py                      |        5 |        0 |    100% |           |
-| haystack/document\_stores/in\_memory/document\_store.py                   |      431 |       15 |     97% |419-420, 429, 535, 616, 661, 663, 690-691, 745, 885, 887, 905, 910-911 |
+| haystack/document\_stores/in\_memory/document\_store.py                   |      439 |       16 |     96% |44, 435-436, 445, 551, 632, 683, 685, 712-713, 769, 909, 911, 929, 934-935 |
 | haystack/document\_stores/types/\_\_init\_\_.py                           |        4 |        0 |    100% |           |
 | haystack/document\_stores/types/filter\_policy.py                         |       63 |       10 |     84% |25, 38-39, 168, 176-182, 228-233, 237-243 |
 | haystack/document\_stores/types/policy.py                                 |        6 |        0 |    100% |           |
@@ -266,7 +266,7 @@
 | haystack/utils/type\_serialization.py                                     |      144 |        6 |     96% |106, 108, 260-261, 269, 285 |
 | haystack/utils/url\_validation.py                                         |        4 |        0 |    100% |           |
 | haystack/version.py                                                       |        5 |        2 |     60% |      9-10 |
-| **TOTAL**                                                                 | **17238** |  **751** | **96%** |           |
+| **TOTAL**                                                                 | **17253** |  **750** | **96%** |           |
 
 
 ## Setup coverage badge
